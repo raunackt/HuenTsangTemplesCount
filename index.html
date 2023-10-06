@@ -11,9 +11,18 @@
         font-family: "Segoe UI";
       }
 
-      div {
+      table{
+        border-collapse: collapse;
+      }
+
+      .heatMap {
         width: 80%;
         margin: 10px auto;
+      }
+
+      .content {
+        width: 60%;
+        margin: 0 auto;
       }
 
       .content p {
@@ -26,13 +35,13 @@
         text-align: center;
         color: white;
         border: solid 1px black;
-        padding: 5px;
+        padding: 5px 8px;
       }
 
       .heatMap td {
         border: solid 1px;
         text-align: center;
-        padding: 5px;
+        padding: 8px;
       }
 
       .heatMap tr td:nth-child(1),
@@ -41,27 +50,27 @@
         text-align: left;
       }
 
-      .heatMap tr:nth-child(2) td:nth-child(2) {
-        background: grey;
+      /* .heatMap tr td:nth-child(3),
+      .heatMap tr td:nth-child(6),
+      .heatMap tr td:nth-child(9),
+      .heatMap tr th:last-child{
+        border-right: solid 1px black;
       }
-      .heatMap tr:nth-child(8) td:nth-child(2) {
-        background: grey;
-      }
-      .heatMap tr:nth-child(16) td:nth-child(2) {
-        background: grey;
-      }
-      .heatMap tr:nth-child(16) td:nth-child(5) {
-        background: grey;
-      }
-      .heatMap tr:nth-child(17) td:nth-child(5) {
-        background: grey;
-      }
-      .heatMap tr:nth-child(2) td:nth-child(8) {
-        background: grey;
-      }
+
+      .heatMap tr td:nth-child(1),
+      .heatMap tr th:nth-child(1){
+        border-left: solid 1px black;
+      } */
+
+      .heatMap tr:nth-child(2) td:nth-child(2),
+      .heatMap tr:nth-child(8) td:nth-child(2),
+      .heatMap tr:nth-child(16) td:nth-child(2),
+      .heatMap tr:nth-child(17) td:nth-child(5),
+      .heatMap tr:nth-child(2) td:nth-child(8),
       .heatMap tr:nth-child(16) td:nth-child(8) {
-        background: grey;
+        background: lightgrey;
       }
+      
     </style>
   </head>
   <body>
